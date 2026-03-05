@@ -1,0 +1,16 @@
+# ----------------------------------------------------------------------------------
+# .gitignore para Repositório de Portfólio (Apenas Divulgação)
+# ----------------------------------------------------------------------------------
+
+# 1. Ignorar TODOS os arquivos e pastas do projeto por padrão
+# (Isso garante que o código-fonte original não vaze, já que é proprietário)
+*
+
+# 2. Abrir exceção (NÃO ignorar) apenas para os arquivos de apresentação:
+!.gitignore
+!README.md
+
+# 3. (Opcional) Se você for adicionar prints ou GIFs do projeto no README futuramente,
+# crie uma pasta chamada "assets" e descomente as linhas abaixo para que o Git a inclua:
+#!assets/
+#!assets/*
