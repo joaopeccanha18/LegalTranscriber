@@ -1,7 +1,5 @@
 # Legal Transcriber — WhatsApp Audio AI Integration
 
-> **Nota:** Este repositório serve como demonstração de arquitetura e portfólio técnico. O código-fonte integral é proprietário e não está disponível para distribuição pública.
-
 Este projeto é uma extensão de alta performance para o Google Chrome (Manifest V3) desenvolvida como um **Software as a Service (SaaS)** para o setor jurídico. A ferramenta integra o motor de IA da **Groq Cloud (Whisper-large-v3)** ao **WhatsApp Web**, permitindo a transcrição instantânea de mensagens de voz.
 
 
