@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Legal Transcriber",
+  "version": "1.4.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "description": "Transcrição automática de mensagens de voz do WhatsApp Web com IA. Desenvolvido para escritórios de advocacia.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Legal Transcriber",
+    "default_popup": "options.html"
+  },
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "https://api.groq.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "page-interceptor.js"
+      ],
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ]
+    }
+  ]
+}
